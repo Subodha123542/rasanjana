@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Subodha</span><br>Rasanjana From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- About------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Subodha Rasanjana is an undergraduate student at the Sri Lanka Technological Campus (SLTC), currently specializing in cybersecurity.
+                        With a keen interest in the ever-evolving field of digital security, Subodha is passionate about understanding and tackling the challenges that come with protecting information systems from cyber threats.
+                        As a student, Subodha is dedicated to gaining practical experience and technical expertise to contribute to the cybersecurity landscape.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Vulnerability Assessment</span><br>Identifying, analyzing, and prioritizing security vulnerabilities in systems and networks.</li>
+                            <li><span>Encryption & Cryptography</span><br>Understanding and applying encryption techniques to protect sensitive data.</li>
+                            <li><span>Threat Analysis</span><br>Analyzing potential security threats and developing strategies to mitigate them.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Cybersecurity Fundamentals</span><br>Studied core cybersecurity concepts and foundational security practices during the first year at SLTC.</li>
+                            <li><span>Network Security Basics</span><br>Gained practical understanding of network security principles, including firewalls, encryption, and intrusion detection systems.</li>
+                            <li><span>Collaborative Projects</span><br>Worked with peers on group projects that focused on securing information systems and mitigating potential threats.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor’s Degree in Cybersecurity</span><br>Currently pursuing at Sri Lanka Technological Campus (SLTC) with a focus on digital security and risk management.</li>
+                            <li><span>Relevant Coursework</span><br>Includes topics such as Cyber Threat Intelligence, Ethical Hacking, and Data Protection.</li>
+                            <li><span>Ongoing Projects and Research</span><br>Working on projects related to malware analysis, network security, and security policy implementation.</li>
+                        </ul>
+                    </div>
+                </div>      
+            </div>        
+        </div>
+    </div>
+
+    <!-- -----------Services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-shield-alt"></i> 
+                    <h2>Cybersecurity Consultation</h2>
+                    <p>Offering expert advice on securing digital assets, identifying risks, and implementing security measures for businesses and individuals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-search"></i> 
+                    <h2>Vulnerability Assessment</h2>
+                    <p>Conducting comprehensive assessments to identify and prioritize security weaknesses in systems and networks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <h2>Incident Response Planning</h2>
+                    <p>Developing and implementing effective incident response strategies to quickly detect, manage, and recover from cyber attacks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------- Portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="Work 1">
+                    <div class="layer">
+                        <h3>Cybersecurity Consultation</h3>
+                        <p>Offering expert advice on securing digital assets, identifying risks, and implementing security measures for businesses and individuals.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Work 2">
+                    <div class="layer">
+                        <h3>Network Security Analysis</h3>
+                        <p>Conducting in-depth security audits of network infrastructure to identify vulnerabilities and strengthen defenses against cyber threats.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Work 3">
+                    <div class="layer">
+                        <h3>Penetration Testing</h3>
+                        <p>Simulating attacks to evaluate system defenses, uncover weaknesses, and provide actionable recommendations for improved security.</p>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> subodha606@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0775428014</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com"><i class="fab fa-facebook"></i></a> 
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>copyright @ Rasanjana. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        
+        
+    </script>
+</body>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwHnU_Pla7DvXHT3y56jyPGpR6BbVfTnXenS-kkiO4wLnrGqIh7tLSMUB97D7Bp54AU/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Massage sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
